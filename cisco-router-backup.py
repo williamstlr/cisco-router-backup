@@ -12,7 +12,7 @@ import argparse
 
 
 #setup argument parser
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(epilog='** If syslog reports that no login prompt was received, ssh to the device manually once and accept the hostkey **')
 parser.add_argument("device", help="Hostname or IP Address of device to be backed up")
 parser.parse_args()
 args = parser.parse_args()
